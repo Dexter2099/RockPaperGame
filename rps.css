@@ -35,3 +35,13 @@ button:hover {
 button:active {
   transform: translateY(1px);
 }
+
+@keyframes flash {
+  0% { background-color: yellow; }
+  50% { background-color: white; }
+  100% { background-color: yellow; }
+}
+
+button:active {
+  animation: flash 0.5s;
+}
